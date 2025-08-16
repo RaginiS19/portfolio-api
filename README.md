@@ -1,59 +1,56 @@
-# 💼 Ragini Shirwalkar - Portfolio Website
+# Ragini Shirwalkar - Portfolio Website
 
-A modern, responsive portfolio website built with React that showcases my skills, projects, and professional experience. The website fetches data from a backend API to display dynamic content.
+A modern, responsive portfolio website built with React showcasing my skills, projects, and experience as a Full Stack Developer.
 
-## 🌟 Features
+## 🌟 Live Demo
 
-- **Modern Design**: Clean, professional design with smooth animations
-- **Responsive Layout**: Fully responsive design that works on all devices
-- **Dynamic Content**: Fetches projects and skills from backend API
-- **Interactive Elements**: Smooth scrolling, hover effects, and form handling
-- **Performance Optimized**: Fast loading with optimized images and code
-- **Accessibility**: Built with accessibility best practices
+**Visit my portfolio:** [https://raginis19.github.io/portfolio-api/](https://raginis19.github.io/portfolio-api/)
 
-## 🧠 Tech Stack
+## 🚀 Features
 
-- **Frontend**: React 18, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS with CSS Grid and Flexbox
+- **Responsive Design** - Works perfectly on all devices
+- **Modern UI/UX** - Clean, professional design with neutral color scheme
+- **Dynamic Content** - Fetches data from backend API
+- **Smooth Animations** - Engaging user interactions
+- **Contact Form** - Easy way for potential clients to reach out
+- **SEO Optimized** - Better search engine visibility
+
+## 🛠 Tech Stack
+
+- **Frontend**: React.js, CSS3, HTML5
+- **Styling**: Custom CSS with Flexbox and Grid
 - **Icons**: React Icons
-- **API Integration**: Fetch API for backend communication
-- **Deployment**: Vercel (recommended)
+- **Backend API**: Node.js, Express, MongoDB
+- **Deployment**: GitHub Pages
 
-## 🚀 Live Demo
+## 📱 Sections
 
-🌐 **Deployed URL**: [https://ragini-portfolio.vercel.app](https://ragini-portfolio.vercel.app)
+1. **Hero Section** - Introduction with photo and social links
+2. **About** - Professional background and skills overview
+3. **Experience & Education** - Timeline of work and education
+4. **Projects** - Showcase of completed projects
+5. **Skills** - Technical skills with progress bars
+6. **Contact** - Contact form and information
+7. **Let's Talk** - Call-to-action for potential clients
 
-## 📋 Sections
+## 🔗 API Integration
 
-1. **Hero Section**: Introduction with call-to-action buttons
-2. **About Section**: Personal information and professional background
-3. **Projects Section**: Portfolio projects with technology tags
-4. **Skills Section**: Technical skills with progress indicators
-5. **Contact Section**: Contact form and contact information
-6. **Footer**: Social links and additional information
+The portfolio fetches data from my backend API:
+- **Projects**: https://ragini-portfolio-api.onrender.com/api/projects
+- **Skills**: https://ragini-portfolio-api.onrender.com/api/skills
 
-## 🔧 API Integration
-
-The website connects to the backend API at `https://ragini-portfolio-api.onrender.com`:
-
-- **Projects Endpoint**: `/api/projects` - Fetches project data
-- **Skills Endpoint**: `/api/skills` - Fetches skills data
-
-### Fallback Data
-If the API is unavailable, the website displays fallback content to ensure a complete user experience.
-
-## 🛠️ Installation & Setup
+## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js (v14 or higher)
 - npm or yarn
 
-### Local Development
+### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/RaginiS19/portfolio-frontend.git
-   cd portfolio-frontend
+   git clone https://github.com/RaginiS19/portfolio-api.git
+   cd portfolio-api
    ```
 
 2. **Install dependencies**
@@ -66,115 +63,72 @@ If the API is unavailable, the website displays fallback content to ensure a com
    npm start
    ```
 
-4. **Open in browser**
-   ```
-   http://localhost:3000
-   ```
-
-### Building for Production
-
-```bash
-npm run build
-```
-
-This creates a `build` folder with optimized production files.
+4. **Open your browser**
+   Visit `http://localhost:3000`
 
 ## 📁 Project Structure
 
 ```
-src/
-├── components/
-│   ├── Header.js          # Navigation header
-│   ├── Hero.js           # Hero section
-│   ├── About.js          # About section
-│   ├── Projects.js       # Projects showcase
-│   ├── Skills.js         # Skills display
-│   ├── Contact.js        # Contact form
-│   ├── Footer.js         # Footer
-│   └── *.css             # Component styles
-├── App.js                # Main app component
-├── App.css               # Global styles
-└── index.js              # App entry point
+portfolio-frontend/
+├── public/
+│   ├── index.html
+│   └── ragini-photo.jpg
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Hero.js
+│   │   ├── About.js
+│   │   ├── Experience.js
+│   │   ├── Projects.js
+│   │   ├── Skills.js
+│   │   ├── Contact.js
+│   │   ├── LetsTalk.js
+│   │   └── Footer.js
+│   ├── App.js
+│   └── index.js
+└── package.json
 ```
 
 ## 🎨 Customization
 
 ### Colors
-The website uses a consistent color scheme defined in CSS variables:
-- Primary: `#667eea` to `#764ba2` (gradient)
-- Secondary: `#2c3e50`
-- Accent: `#ffd700`
+The portfolio uses a neutral color scheme:
+- Primary: `#8B7355` (Brown)
+- Secondary: `#A0522D` (Dark Brown)
+- Background: `#F7FAFC` (Light Gray)
+- Text: `#2D3748` (Dark Gray)
 
 ### Content
-Update the following files to customize content:
+Update the following files to customize your portfolio:
 - `src/components/Hero.js` - Hero section content
-- `src/components/About.js` - About section content
+- `src/components/About.js` - About section
+- `src/components/Experience.js` - Work and education timeline
+- `src/components/Projects.js` - Project details
 - `src/components/Contact.js` - Contact information
-- `src/App.js` - Fallback project and skill data
-
-### API Endpoints
-Update the API URLs in `src/App.js` to connect to your own backend:
-```javascript
-fetch('https://your-api-url.com/api/projects')
-fetch('https://your-api-url.com/api/skills')
-```
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### GitHub Pages (Current)
+The portfolio is deployed using GitHub Pages:
+```bash
+npm run deploy
+```
 
-1. **Install Vercel CLI**
-   ```bash
-   npm i -g vercel
-   ```
+### Alternative Deployment Options
+- **Vercel**: Connect your GitHub repository
+- **Netlify**: Drag and drop the build folder
+- **Firebase**: Use Firebase Hosting
 
-2. **Deploy**
-   ```bash
-   vercel
-   ```
+## 📞 Contact
 
-3. **Follow the prompts** to connect your GitHub repository
-
-### Other Platforms
-
-The build folder can be deployed to any static hosting service:
-- Netlify
-- GitHub Pages
-- AWS S3
-- Firebase Hosting
-
-## 📱 Responsive Design
-
-The website is fully responsive with breakpoints:
-- **Desktop**: 1200px and above
-- **Tablet**: 768px to 1199px
-- **Mobile**: Below 768px
-
-## 🔍 Performance
-
-- Optimized images and assets
-- Lazy loading for better performance
-- Minified CSS and JavaScript in production
-- Efficient component rendering
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- **Email**: shirwalkarragini@gmail.com
+- **LinkedIn**: [Ragini Shirwalkar](https://www.linkedin.com/in/raginishirwalkar/)
+- **GitHub**: [RaginiS19](https://github.com/RaginiS19)
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 📞 Contact
-
-- **Email**: ragini.shirwalkar@example.com
-- **LinkedIn**: [Ragini Shirwalkar](https://linkedin.com/in/ragini-shirwalkar)
-- **GitHub**: [@RaginiS19](https://github.com/RaginiS19)
-
 ---
 
-⭐ **Star this repository if you found it helpful!**
+**Built with ❤️ by Ragini Shirwalkar**
